@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GSC Data Analyzer</title>
+  <meta name="description" content="A personal command-line tool that reads Google Search Console performance data for sites the owner manages.">
+  <style>
+    :root { --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --link: #0969da; --rule: #d1d9e0; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --link: #4493f8; --rule: #3d444d; }
+    }
+    body { margin: 0; background: var(--bg); color: var(--fg);
+           font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
+    h1 { font-size: 28px; margin: 0 0 8px; }
+    h2 { font-size: 18px; margin: 32px 0 8px; }
+    p, li { color: var(--fg); }
+    .muted { color: var(--muted); }
+    a { color: var(--link); }
+    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--rule); font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>GSC Data Analyzer</h1>
+  <p class="muted">A personal, read-only reporting tool for Google Search Console.</p>
+
+  <h2>What it does</h2>
+  <p>GSC Data Analyzer is a small command-line script run on the developer's own computer. It reads search performance data (queries, pages, clicks, impressions, CTR and average position) from Google Search Console for websites the developer already has access to, and saves it as local files for SEO analysis and progress reports.</p>
+
+  <h2>Who it is for</h2>
+  <p>This tool is for the developer's personal use only. It is not offered to the public and has no sign-up, hosted service or user accounts.</p>
+
+  <h2>Google permissions</h2>
+  <ul>
+    <li>It requests one scope: <code>https://www.googleapis.com/auth/webmasters.readonly</code> (view Search Console data).</li>
+    <li>It cannot change any Search Console settings, verify sites or manage users.</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>See the <a href="privacy.html">Privacy Policy</a> for how data is handled.</p>
+
+  <footer class="muted">
+    Questions: open an issue on the <a href="https://github.com/Leezj9671/gsc-data-analyzer/issues">GitHub repository</a>.
+  </footer>
+</main>
+</body>
+</html>
